@@ -1,0 +1,155 @@
+/* вся страница */
+body {
+    font-family: Courier New, monospace;
+    background-color: #2f2f2f;
+    color: white;
+}
+
+
+/* шапка сайта */
+/* header{
+    font-size: 20px;
+} */
+/* лого сайта */
+/* .logo{
+    background-color: #232323;
+} */
+/* лого сайта(снова) */
+/* .logo img{
+    vertical-align: middle;
+}  */
+
+
+header {
+  background-color: #232323;
+  display: flex; /* add flex display to the header */
+  justify-content: space-between; /* align the child elements at the beginning and end of the header */
+  align-items: center; /* align the child elements vertically at the center of the header */
+}
+
+.logo {
+  display: block;
+  align-items: center; /* align the child elements vertically at the center */
+  /* padding: 1em; */
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+  margin-right: 1em; /* add margin to the right to create space between the logo and text */
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/* кнопка для перехода в экспертную панель */
+.expertbtn{
+    margin: 1em;
+    display: inline-block; /* Строчно-блочный элемент */
+    background-color: #c92fe8; /* корпоративный цвет фона (фиолетовый)*/
+    color: white; /* Белый цвет текста */
+    padding: 1rem 1.5rem; /* Поля вокруг текста */
+    text-decoration: none; /* Убираем подчёркивание */
+    border-radius: 3px; /* Скругляем уголки */
+    /* #c92fe8 */
+}
+/* Section */
+.section {
+    padding: 80px 0;
+}
+
+.aLink {
+    background-color:#2f2f2f;
+}
+
+
+
+
+.section__header {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto 50px;
+
+    text-align: center;
+}
+
+
+
+.section__title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #e5e5e5;
+    text-transform: uppercase;
+}
+
+.section__title:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 30px auto;
+
+    background-color: #f38181;
+}
+
+.section__text {
+    font-size: 15px;
+    color: #999;
+}
+
+
+/* We do */
+.wedo {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.wedo__item {
+    width: 50%;
+    padding: 0 15px;
+}
+
+.wedo__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 100%;
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+table {
+    margin: 2rem auto;
+    border-collapse: collapse;
+    background-color: var(--overlay-color);
+}
+
+th,
+td {
+    padding: 0.5rem 1rem;
+    text-align: center;
+    border: 1px solid white;
+    font-weight: 500;
+    letter-spacing: 0.15rem;
+}
+
+th {
+    background-color: var(--overlay-color);
+    color: white;
+}
+caption{
+    letter-spacing: 0.4rem;
+    margin-bottom: 1.8em;
+    font-size: 1.6em;
+    text-align: center;
+}
